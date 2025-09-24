@@ -4,7 +4,6 @@
  * Description: Dodaje możliwość sortowania produktów wg tagów (A–Z i Z–A), ceny (rosnąco/malejąco) i opinii (rosnąco/malejąco).
  * Version:     1.2
  * Author:      Dawid Majcherek
- * Text Domain: woo-tag-sorting
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -105,3 +104,4 @@ function wts_custom_ordering_args( $args ) {
 
     return $args;
 }
+
