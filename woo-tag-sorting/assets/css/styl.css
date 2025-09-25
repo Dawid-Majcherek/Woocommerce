@@ -1,0 +1,57 @@
+/* WooCommerce custom product filter form */
+.woo-filter-form {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.woo-filter-form p {
+    margin-bottom: 15px;
+}
+
+.woo-filter-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.woo-filter-form input[type="number"],
+.woo-filter-form select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #fff;
+    transition: border-color 0.2s ease;
+}
+
+.woo-filter-form input[type="number"]:focus,
+.woo-filter-form select:focus {
+    border-color: #96588a;
+    /* WooCommerce primary color */
+    outline: none;
+}
+
+.woo-filter-form button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    background: #96588a;
+    /* WooCommerce purple */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.woo-filter-form button:hover {
+    background: #7a476f;
+}
