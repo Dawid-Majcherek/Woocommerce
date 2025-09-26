@@ -11,6 +11,24 @@
 if (! defined('ABSPATH')) {
     exit; // Prevent direct access
 }
+/**
+ * Enqueue plugin styles.
+ *
+ * @return void
+ */
+function wts_enqueue_styles() {
+    // Zarejestruj i załaduj CSS tylko na stronach WooCommerce
+    if ( is_shop() || is_product_category() || is_product_tag() || is_product() ) {
+        wp_enqueue_style(
+            'woo-tag-sorting-styles',
+            plugin_dir_url( __FILE__ ) . 'assets/css/styl.css',
+            array(),
+            '1.0.0'
+        );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'wts_enqueue_styles' );
+
 
 /**
  * Add custom sorting options to WooCommerce dropdown.
